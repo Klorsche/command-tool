@@ -1,22 +1,21 @@
-#Nmap
+# Nmap
 
-Nmap (Network Mapper) is a free and open-source network scanner created by Gordon Lyon (also known by his pseudonym Fyodor Vaskovich).[3] Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses.[4]
+Nmap (Network Mapper) is a free and open-source network scanner created by Gordon Lyon (also known by his pseudonym Fyodor Vaskovich).[3] Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses.
 
-Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection. These features are extensible by scripts that provide more advanced service detection,[5] vulnerability detection,[5] and other features. Nmap can adapt to network conditions including latency and congestion during a scan. 
+Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection. These features are extensible by scripts that provide more advanced service detection, vulnerability detection, and other features. Nmap can adapt to network conditions including latency and congestion during a scan. 
 
 *basic syntax*
 
-,,,
-nmap [ScanType] [Options] TargetIP
-,,,
+    nmap [ScanType] [Options] TargetIP
+
 
 *Usage Example*
-,,,
-sudo nmap [-sS] -A -p- TargetIP -oX filename.xml
-sudo nmap -sV -O TargetIP -oX filename.xml
-,,,
 
-#Discovery Types
+    sudo nmap [-sS] -A -p- TargetIP -oX filename.xml
+    sudo nmap -sV -O TargetIP -oX filename.xml
+
+
+# Discovery Types
 
 *SYN, ACK, UDP Discovery*
 ,,,
@@ -57,7 +56,7 @@ nmap -sL TargetIP
 ,,,
 The list scan is a degenerate form of host discovery that simply lists each host of the network(s) specified, without sending any packets to the target hosts. By default, Nmap still does reverse-DNS resolution on the hosts to learn their names
 
-#Scanning Type
+# Scanning Type
 
 *No-Discovery Scan*
 ,,,
@@ -127,7 +126,7 @@ The point is to enable a comprehensive set of scan options without people having
 Determines the application name and version number where available—not just the service protocol. Supports both the TCP and UDP protocols, multi-platform. Enables OS detection, version detection, script scanning, and traceroute.
 
 
-#Ports & Timing Options
+# Ports & Timing Options
 
 *Specific Ports*
 ,,,
@@ -151,7 +150,7 @@ nmap [ScanType] -T (0-1-2-3-4-5) TargetIP
 The first two are for IDS evasion. Polite mode slows down the scan to use less bandwidth and target machine resources. Normal mode is the default and so -T3 does nothing. Aggressive mode speeds scans up by making the assumption that you are on a reasonably fast and reliable network. Finally insane mode assumes that you are on an extraordinarily fast network or are willing to sacrifice some accuracy for speed.  -T4 is recommended.
 
 
-#Output Format
+# Output Format
 
 *Greppable Format*
 ,,,
@@ -168,7 +167,7 @@ nmap [ScanType] TargetIP -oX filename.xml
 nmap [ScanType] TargetIP -oA filename.xml 
 ,,,
 
-#Other Switches
+# Other Switches
 
 ,,,
 -v (Verbose)
