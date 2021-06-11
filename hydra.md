@@ -22,4 +22,4 @@ hydra -s PORT -l <username> -P </path/to/wordlist> TargetIP [-t 4] protocol
 hydra -l <username> -P <wordlist> TargetIP http-post-form "/:username=^USER^&password=^PASS^:<"+"=incorrect">
 ```
 
-+ we need to insert something that let hydra know that the login was unsuccessful such as "username or password are incorrect". We find this statement by simply insert incorrect parameter and look at the response
+- "+" we need to insert something that let hydra know that the login was unsuccessful such as "username or password are incorrect". We find this statement by simply insert incorrect parameter and look at the response
