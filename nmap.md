@@ -170,6 +170,7 @@ nmap [ScanType] TargetIP -oA filename.xml
 #Other Switches
 
 ,,,
+-v (Verbose)
 -R  (Do reverse-DNS resolution)
 -n	(Never do DNS resolution)
 -iL (take input from list)
