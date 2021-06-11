@@ -7,10 +7,9 @@ hashcat is the world’s fastest and most advanced password recovery utility, su
 hashcat -m Hashnumber -a Choosemethod filetocrack [/path/to/wordlists/]
 ```
 
-+
-Method 
-0 - Dictionary Attack [need a wordlist]
-3 - Brute Force
+*Method* 
+ - 0 - Dictionary Attack [need a wordlist]
+ - 3 - Brute Force
 
 HashNumber
 https://hashcat.net/wiki/doku.php?id=example_hashes
