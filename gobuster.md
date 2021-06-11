@@ -1,4 +1,4 @@
-#GoBuster
+# GoBuster
 
 Gobuster is a tool used to brute-force:
 
@@ -18,6 +18,5 @@ Because I wanted:
     - to build something in Go that wasn’t totally useless.
 
 *basic syntax*
-,,,
-gobuster dir -u TargetIP -w path/to/wordlist [-x php, sh, txt, cgi]
-,,,
+
+    - gobuster dir -u TargetIP -w path/to/wordlist [-x php, sh, txt, cgi]
