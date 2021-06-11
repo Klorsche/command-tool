@@ -11,7 +11,9 @@ Nmap provides a number of features for probing computer networks, including host
 
 *Usage Example*
 
-    sudo nmap [-sS] -A -p- TargetIP -oX filename.xml
+    sudo nmap [-sS] -A -p- TargetIP -oX filename.xml 
+---
+
     sudo nmap -sV -O TargetIP -oX filename.xml
 
 
