@@ -4,7 +4,7 @@ hashcat is the world’s fastest and most advanced password recovery utility, su
 
 *basic syntax*
 ```
-hashcat -m Hashnumber -a Choosemethod filetocrack [/path/to/wordlists/]
+hashcat -m HASHNUMBER -a METHOD FILETOCRACK [/path/to/wordlists/]
 ```
 
 *Method* 
