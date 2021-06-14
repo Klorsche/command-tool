@@ -14,8 +14,9 @@ john --show path/to/file/hash-john
 
 *how to crack password with etcpasswd and etcshadow*
 
+```
 copy the line we need from etcpasswd & etcshadow in a new file each
-
+```
 ```
 unshadow FILEPASSWD FILESHADOW > FILE4JOHN
 ```
