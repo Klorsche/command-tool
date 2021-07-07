@@ -26,11 +26,11 @@ nc -z HOST PORT-RANGE
 
 *Data Transfer*
 
-on the target
+on the sender
 ```
 nc receiving.host.com PORT < file_name
 ```
-on the attacker
+on the recipient
 ```
 nc -l PORT > file_name
 ```
