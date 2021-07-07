@@ -69,7 +69,6 @@ nmap -Pn TARGETIP
 ```
 The key concept here is that if discovery fails for a particular host, Nmap doesn’t scan it. This means you have to ensure that the options you give to Nmap will find hosts in the discovery phase.
 
-
 ```
 nmap -P0 TARGETIP
 ``` 
@@ -77,7 +76,7 @@ Basically says to Nmap, “Don’t worry about discovery — just scan.”
 
 It would let a tester scan every TCP port from a network that is blocking ICMP with fingerprinting and service detection. It marks all hosts as "online" by default.
 
-
+  -
 
 *Stealth Scan - Root Default*
 ```
