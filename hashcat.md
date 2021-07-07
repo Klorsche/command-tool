@@ -14,7 +14,7 @@ hashcat -m HASHNUMBER -a METHOD FILETOCRACK [/path/to/wordlists/]
 HashNumber
 https://hashcat.net/wiki/doku.php?id=example_hashes
 
-HashMask
+*HashMask*
 ```
 hashcat -m HASHNUMBER -a 3 FILETOCRACK [/path/to/wordlists/] ?l?l?l?l 
 ```
