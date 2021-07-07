@@ -28,9 +28,9 @@ nc -z HOST PORT-RANGE
 
 on the sender
 ```
-nc receiving.host.com PORT < file_name
+nc RECIPIENT.HOST.COM PORT < FILENAME
 ```
 on the recipient
 ```
-nc -l PORT > file_name
+nc -l PORT > FILENAME
 ```
