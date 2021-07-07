@@ -77,6 +77,7 @@ Basically says to Nmap, “Don’t worry about discovery — just scan.”
 It would let a tester scan every TCP port from a network that is blocking ICMP with fingerprinting and service detection. It marks all hosts as "online" by default.
 
   -
+  -
 
 *Stealth Scan - Root Default*
 ```
@@ -84,6 +85,8 @@ sudo nmap [-sS] TARGETIP
 ```
 SYN scanning is a TCP port scanning method that involves sending SYN packets to various ports on a target machine without completing a TCP handshake. If discovery fails, it doesn't perform any scan
 
+  -
+  -
 
 *TCP Scan - Without Root Default*
 ```
