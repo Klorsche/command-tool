@@ -19,5 +19,5 @@ Because I wanted:
 
 *basic syntax*
 ```
-gobuster dir -u TargetIP -w path/to/wordlist [-x php, sh, txt, cgi]
+gobuster dir -u TARGETIP -w path/to/wordlist [-x php,sh,txt,cgi,html,css,py,js]
 ```
