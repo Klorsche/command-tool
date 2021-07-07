@@ -19,7 +19,9 @@ hydra -s PORT -l USERNAME -P /path/to/wordlist TARGETIP [-t 4] PROTOCOL
 
 *bruteforce a POST login form*
 ```
-hydra -l USERNAME -P path/to/wordlist TARGETIP http-post-form "/:username=^USER^&password=^PASS^:<"++++"=incorrect">
+hydra -l USERNAME -P path/to/wordlist TARGETIP http-post-form "/LOGINPAGE:USERFIELDNAME=^USER^&PASSWORDFIELDNAME=^PASS^:LOGINFAILEDERRORMESSAGE"
 ```
-
-- "++++" we need to insert something that let hydra know that the login was unsuccessful such as "username or password are incorrect". We find this statement by simply insert incorrect parameter and look at the response
+  - Other protocols 
+```
+FTP, HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-PROXY, HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MS-SQL, MYSQL, POP3, POSTGRES, RDP, SMTP, SMTP Enum, SNMP, SOCKS5, SSH (v1 and v2), Subversion, Telnet, VMware-Auth, VNC eXMP
+```
