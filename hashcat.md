@@ -13,3 +13,18 @@ hashcat -m HASHNUMBER -a METHOD FILETOCRACK [/path/to/wordlists/]
 
 HashNumber
 https://hashcat.net/wiki/doku.php?id=example_hashes
+
+HashMask
+```
+hashcat -m HASHNUMBER -a 3 FILETOCRACK [/path/to/wordlists/] ?l?l?l?l 
+```
+e.g. for a lowercase bruteforce of 4 digits
+
+ ? | Charset
+ ===+=========
+  - l | abcdefghijklmnopqrstuvwxyz
+  - u | ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  - d | 0123456789
+  - s |  !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+  - a | ?l?u?d?s
+  - b | 0x00 - 0xff
