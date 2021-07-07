@@ -37,12 +37,12 @@ sudo systemctl start ssh
 sudo vim /etc/ssh/sshd_config
 ```
 
-*Data transfer from attacker to target*
+*Data transfer to remote host*
 ```
-scp FILENAME USER@TARGETIP:/path/to/destination [-i PRIVATEKEY.txt]
+scp [-P PORT] FILENAME USER@RECIPIENTIP:/path/to/destination [-i PRIVATEKEY.txt]
 ```
 
-*Data transfer from target to attacker*
+*Data retrieve from remote host*
 ```
-scp TARGETUSER@TARGETIP:/path/to/file path/where/you/want/to/save/file
+scp [-P PORT] TARGETUSER@RECIPIENTIP:/path/to/file path/where/you/want/to/save/file
 ```
