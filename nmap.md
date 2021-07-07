@@ -79,7 +79,7 @@ It would let a tester scan every TCP port from a network that is blocking ICMP w
   -
   -
 
-*Stealth Scan - Root Default*
+# *Stealth Scan - Root Default*
 ```
 sudo nmap [-sS] TARGETIP
 ```
