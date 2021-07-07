@@ -9,7 +9,7 @@ hydra -l USERNAME -P /path/to/wordlist TARGETIP [-t 4] PROTOCOL
 
 *cracking User & Password*
 ```
-hydra -l path/to/userlist -P /path/to/wordlist TARGETIP [-t 4] PROTOCOL
+hydra -L path/to/userlist -P /path/to/wordlist TARGETIP [-t 4] PROTOCOL
 ```
 
 *specify different port*
