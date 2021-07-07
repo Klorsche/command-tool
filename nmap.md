@@ -22,24 +22,23 @@ sudo nmap -sV -O TARGETIP -oX filename.xml
 ```
 nmap -PS TARGETIP
 ```
-```
-nmap -PA TARGETIP
-```
-```
-nmap -PU TARGETIP
-```
-
-PS - This option sends an empty TCP packet with the SYN flag set. The default destination port is 80 (they are called "port 80 SYN probes"). Alternate ports can be specified as a parameter, for ex: 
+This option sends an empty TCP packet with the SYN flag set. The default destination port is 80 (they are called "port 80 SYN probes"). Alternate ports can be specified as a parameter, for ex: 
 -PS22-25,80,113,1050,35000.
 
 The SYN flag suggests to the remote system that you are attempting to establish a connection. Normally the destination port will be closed, and a RST (reset) packet sent back. If the port happens to be open, the target will take the second step of a TCP three-way-handshake. Either the RST or SYN/ACK response 
 tell Nmap that the host is available and responsive.
 
-PA - The -PA option uses the same default port as the SYN probe (80) and can also take a list of destination ports in the same format (-PS22-25,80,113,1050,35000). The reason for offering both SYN and ACK ping probes is to maximize the chances of bypassing firewalls. 
+```
+nmap -PA TARGETIP
+```
+The -PA option uses the same default port as the SYN probe (80) and can also take a list of destination ports in the same format (-PS22-25,80,113,1050,35000). The reason for offering both SYN and ACK ping probes is to maximize the chances of bypassing firewalls. 
 
 It succeeds when -PS fails and vice versa. A solution to this problem is to send both SYN and ACK probes by specifying -PS and -PA
 
-PU - Network exploration tool and security / port scanner -PU port list (UDP Ping). Another host discovery option is the UDP ping, which sends a UDP packet to the given ports. For most ports, the packet will be empty, though for a few a protocol-specific payload will be sent that is more likely to get a response.
+```
+nmap -PU TARGETIP
+```
+Network exploration tool and security / port scanner -PU port list (UDP Ping). Another host discovery option is the UDP ping, which sends a UDP packet to the given ports. For most ports, the packet will be empty, though for a few a protocol-specific payload will be sent that is more likely to get a response.
 
 The port list takes the same format as with the previously discussed -PS and -PA options. If no ports are specified, the default is 40125.
 
