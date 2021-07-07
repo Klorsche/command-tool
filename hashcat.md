@@ -21,7 +21,6 @@ hashcat -m HASHNUMBER -a 3 FILETOCRACK [/path/to/wordlists/] ?l?l?l?l
 e.g. for a lowercase bruteforce of 4 digits
 
  ? | Charset
- ----
  
   - l  [abcdefghijklmnopqrstuvwxyz]
   - u  [ABCDEFGHIJKLMNOPQRSTUVWXYZ]
