@@ -26,7 +26,7 @@ nc -z HOST PORT-RANGE
 
 *Data Transfer*
 
-on the sender
+on the sender in the directory where file is stored
 ```
 nc RECIPIENTIP RECIPIENTPORT < FILENAME
 ```
