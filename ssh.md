@@ -17,7 +17,7 @@ ssh USER@TARGETIP [-p PORT]
 ssh USER@TARGETIP [-p PORT] -i PRIVATEKEY.txt 
 ```
 
-*Start ssh*
+*Start/Stop SSH Server*
 ```
 dpkg -l | grep ssh
 ```
@@ -30,6 +30,12 @@ sudo systemctl enable ssh
 ```
 ```
 sudo systemctl start ssh
+```
+```
+sudo systemctl status ssh
+```
+```
+sudo systemctl stop ssh
 ```
 
 *Edit ssh config file*
