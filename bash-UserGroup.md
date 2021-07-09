@@ -89,5 +89,5 @@ change permission on file or directory
 chmod [0-7][0-7][0-7]
 ```
 	- chmod -R (recorsive)
-	- if you need to set SUID (e.g chmod 0777) (4 activate SUID; 2 activate SGID; 1 activate stickybit; 0 deactivate SUID)
+	- if you need to set SUID (e.g chmod 0777) (4 activate SUID; 2 activate SGID; 1 activate stickybit; 0 deactivate all)
 	- chmod -x FILENAME (make file executable for everyone)
