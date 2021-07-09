@@ -203,6 +203,11 @@ unalias ALIAS
 export VARIABLENAME=VARIABLEVALUE
 ```
 
+*Determine file type*
+```
+file FILENAME
+```
+
 *Set keyboard*
 ```
 setxkbmap NATION (e.g. it for Italy)
