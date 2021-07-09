@@ -21,7 +21,7 @@ nc -u HOST PORT
 
 *Scan open ports*
 ```
-nc -z HOST PORT-RANGE | grep succeeded
+nc -z HOST PORT-RANGE 2>&1 | grep succeeded
 ```
 
 *Data Transfer*
