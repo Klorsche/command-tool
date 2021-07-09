@@ -39,7 +39,7 @@ sudo vim /etc/ssh/sshd_config
 
 *Data transfer to remote host*
 ```
-scp [-P PORT] FILENAME USER@RECIPIENTIP:/path/to/destination [-i PRIVATEKEY.txt]
+scp [-P PORT] FILENAME USER@REMOTEIP:/path/to/destination [-i PRIVATEKEY.txt]
 ```
 
 *Data retrieve from remote host*
