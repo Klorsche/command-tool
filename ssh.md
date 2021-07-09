@@ -44,5 +44,5 @@ scp [-P PORT] FILENAME USER@RECIPIENTIP:/path/to/destination [-i PRIVATEKEY.txt]
 
 *Data retrieve from remote host*
 ```
-scp [-P PORT] TARGETUSER@RECIPIENTIP:/path/to/file path/where/you/want/to/save/file
+scp [-P PORT] TARGETUSER@REMOTEIP:/path/to/file path/where/you/want/to/save/file
 ```
