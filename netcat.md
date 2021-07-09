@@ -16,12 +16,12 @@ nc -lvnp PORT
 
 *UDP Connection*
 ```
-nc -u HOST PORT
+nc -u HOST PORT 
 ```
 
 *Scan open ports*
 ```
-nc -z HOST PORT-RANGE
+nc -z HOST PORT-RANGE | grep succeeded
 ```
 
 *Data Transfer*
