@@ -28,7 +28,7 @@ nc -z HOST PORT-RANGE
 
 on the sender
 ```
-nc RECIPIENT.HOST.COM RECIPIENTPORT < FILENAME
+nc RECIPIENTIP RECIPIENTPORT < FILENAME
 ```
 on the recipient
 ```
